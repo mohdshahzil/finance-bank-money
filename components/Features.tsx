@@ -11,7 +11,7 @@ const Features = () => {
             <div className='md:w-1/2' ><Image src={FeaturesPhone} alt='featuresphone' ></Image></div>
             <div className='md:w-1/2 p-3'>
 
-                <h1 className='text-[#FF5555] text-2xl' >Features</h1>
+                <h1 className='text-[#FF5555] text-2xl font-semibold' >FEATURES</h1>
                 <PrimaryHeading text='Uifry Premium' ></PrimaryHeading>
                 <div className='mt-8' >
                     <div className='flex flex-col gap-6' >
