@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button'
-import LogoSVG from '@/public/assets/LogoSVG'
-import BrandSVG from '@/public/assets/BrandSVG'
+import LogoSVG from '@/public/assets/SVG/LogoSVG'
+import BrandSVG from '@/public/assets/SVG/BrandSVG'
 
 const Navbar = () => {
   return (

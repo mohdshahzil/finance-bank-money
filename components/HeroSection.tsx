@@ -1,10 +1,10 @@
 "use client"
 import React from "react";
 import Ellipse from "./ui/Ellipse";
-import PhonesSVG from "@/public/assets/PhonesSVG";
+import PhonesSVG from "@/public/assets/SVG/PhonesSVG";
 import { Button } from "./ui/button";
-import PlayButtonSVG from "@/public/assets/PlayButtonSVG";
-import RightArrowSVG from "@/public/assets/RightArrowSVG";
+import PlayButtonSVG from "@/public/assets/SVG/PlayButtonSVG";
+import RightArrowSVG from "@/public/assets/SVG/RightArrowSVG";
 import Iphones from "@/public/assets/images/Iphones.png";
 import SlantLine from "@/public/assets/images/SlantLine.png";
 import Image from "next/image";
