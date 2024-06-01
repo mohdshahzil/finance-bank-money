@@ -18,9 +18,6 @@ const config = {
       },
     },
     extend: {
-      fontFamily: {
-        custom: ["clashdisplay", "sans-serif"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
