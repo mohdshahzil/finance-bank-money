@@ -20,7 +20,8 @@ const WhySection = () => {
                     </div>
 
                 </div>
-            </div></div>
+            </div>
+        </div>
     )
 }
 
