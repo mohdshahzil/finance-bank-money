@@ -9,6 +9,7 @@ const Ellipse = () => {
             <g filter="url(#filter1_f_101_132)">
                 <ellipse cx="275" cy="176.5" rx="142" ry="76.5" fill="#FF5555" />
             </g>
+
             <defs>
                 <filter id="filter0_f_101_132" x="0" y="77" width="490" height="353" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                     <feFlood flood-opacity="0" result="BackgroundImageFix" />
