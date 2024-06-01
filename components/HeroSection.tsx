@@ -34,17 +34,14 @@ const HeroSection = () => {
               </Button>
             </motion.div>
             <div className="w-4"></div>
-            {/* <p className="ml-2 flex text-black items-center justify-center gap-2">
-              <PlayButtonSVG></PlayButtonSVG>
-              Watch Video
-            </p> */}
+
             <motion.div
               className="ml-2 flex text-black items-center justify-center gap-2 hover:cursor-pointer"
               whileHover="hover"
             >
               <motion.div
                 variants={{
-                  hover: { scale: 1.2 }, 
+                  hover: { scale: 1.2 },
                 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
