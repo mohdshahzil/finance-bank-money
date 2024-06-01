@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import Ellipse from "./ui/Ellipse";
-import PhonesSVG from "@/public/assets/SVG/PhonesSVG";
+import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import PlayButtonSVG from "@/public/assets/SVG/PlayButtonSVG";
 import RightArrowSVG from "@/public/assets/SVG/RightArrowSVG";
@@ -13,10 +12,6 @@ const HeroSection = () => {
     <div className=" flex flex-col md:flex-row">
       <div className=" md:w-1/2">
         <div className="font-extrabold z-20">
-          {/* <div className="h-12" ></div>
-                    <div className="h-12" ></div>
-                    <div className="h-4" ></div> */}
-
           <h1 className="text-6xl">Make The Best</h1>
           <h1 className="text-6xl">Financial Decisions</h1>
 
@@ -25,22 +20,43 @@ const HeroSection = () => {
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
           </p>
           <div className="flex flex-row">
-            <Button className=" text-white px-10 py-6 rounded-none mr-2 flex gap-2">
-              Get Started <RightArrowSVG></RightArrowSVG>{" "}
-            </Button>
+            <motion.div whileHover="hover" className="mr-2">
+              <Button className="text-white px-10 py-6 rounded-none flex gap-2 items-center">
+                Get Started
+                <motion.div
+                  variants={{
+                    hover: { x: 5 },
+                  }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <RightArrowSVG />
+                </motion.div>
+              </Button>
+            </motion.div>
             <div className="w-4"></div>
-            <p className="ml-2 flex text-black items-center justify-center gap-2">
+            {/* <p className="ml-2 flex text-black items-center justify-center gap-2">
               <PlayButtonSVG></PlayButtonSVG>
               Watch Video
-            </p>
+            </p> */}
+            <motion.div
+              className="ml-2 flex text-black items-center justify-center gap-2 hover:cursor-pointer"
+              whileHover="hover"
+            >
+              <motion.div
+                variants={{
+                  hover: { scale: 1.2 }, 
+                }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <PlayButtonSVG />
+              </motion.div>
+              Watch Video
+            </motion.div>
           </div>
           <div>
             <Image src={SlantLine} alt="slantline"></Image>
           </div>
         </div>
-        {/* <div className="absolute">
-                    <Ellipse />
-                </div> */}
       </div>
       <div className="md:w-1/2  z-20  flex items-center justify-center">
         <Image src={Iphones} alt="iphones"></Image>
