@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { FlipWords } from "@/components/ui/flip-words";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import PlayButtonSVG from "@/public/assets/SVG/PlayButtonSVG";
@@ -8,12 +9,15 @@ import Iphones from "@/public/assets/images/Iphones.png";
 import SlantLine from "@/public/assets/images/SlantLine.png";
 import Image from "next/image";
 const HeroSection = () => {
+  const words = ["Optimal", "Smartest", "Wisest"];
   return (
     <div className=" flex flex-col md:flex-row">
       <div className=" md:w-1/2">
         <div className="font-extrabold z-20">
-          <h1 className="text-6xl">Make The Best</h1>
-          <h1 className="text-6xl">Financial Decisions</h1>
+          <h1 className="text-5xl md:text-6xl">
+            Make <FlipWords words={words} />
+          </h1>
+          <h1 className="text-5xl md:text-6xl"> Financial Decisions</h1>
 
           <p className="my-6 text-xl opacity-55">
             Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet

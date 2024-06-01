@@ -1,7 +1,7 @@
+@import url("../public/css/clash-display.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -75,10 +75,6 @@
   }
 }
 
-@font-face {
-  font-family: "clashdisplay";
-  src: url("/public/fonts/clash-display/ClashDisplayBold.otf")
-    format("opentype");
-  font-weight: normal;
-  font-style: normal;
+*{
+  font-family: 'ClashDisplay-Regular', sans-serif;
 }
