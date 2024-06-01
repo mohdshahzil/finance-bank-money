@@ -1,3 +1,4 @@
+import FAQ from '@/components/FAQ'
 import Features from '@/components/Features'
 import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Navbar'
@@ -13,6 +14,7 @@ const page = () => {
       <Features></Features>
       <WhySection></WhySection>
       <Testimonial></Testimonial>
+      <FAQ></FAQ>
     </>
   )
 }
