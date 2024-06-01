@@ -4,6 +4,7 @@ import Image from 'next/image';
 import StarSVG from '@/public/assets/SVG/StarSVG';
 import CubeSVG from '@/public/assets/SVG/CubeSVG';
 import Cube2SVG from '@/public/assets/SVG/Cube2SVG';
+import PrimaryHeading from './Headings/PrimaryHeading';
 const Features = () => {
     return (
         <div className='flex flex-col-reverse md:flex-row' >
@@ -11,7 +12,7 @@ const Features = () => {
             <div className='md:w-1/2 p-3'>
 
                 <h1 className='text-[#FF5555] text-2xl' >Features</h1>
-                <h1 className='font-bold text-4xl '  >Uifry Premium</h1>
+                <PrimaryHeading text='Uifry Premium' ></PrimaryHeading>
                 <div className='mt-8' >
                     <div className='flex flex-col gap-6' >
 
