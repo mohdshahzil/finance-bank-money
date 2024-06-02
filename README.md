@@ -42,7 +42,7 @@ Once you have installed the dependencies, you can start the development server:
 
 ```bash
 npm run dev
-
+```
 ## Design Choices and Libraries Used
 
 In this project, I have made several design choices to ensure a modern and user-friendly application. Here are some of the key points:
@@ -53,5 +53,3 @@ In this project, I have made several design choices to ensure a modern and user-
 
 [Figma Design Reference](https://www.figma.com/design/dvc71PcUEYRKrtnZOapRtI/App-Landing-Page-Finance-Bank-Money-(Community)?node-id=0-1&m=dev)
 
-
-```
