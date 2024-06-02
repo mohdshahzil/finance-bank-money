@@ -44,9 +44,9 @@ const Navbar: React.FC = () => {
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="absolute top-16 left-0 w-full bg-white flex flex-col items-center md:hidden"
+          className="absolute top-16 left-0 w-full bg-white flex flex-col items-center md:hidden z-20"
         >
-          <div className="clash-display font-bold text-[#FF5555] py-2">
+          <div className="clash-display font-bold text-[#FF5555] py-2 ">
             Home
           </div>
           <div className="font-bold py-2">About Us</div>

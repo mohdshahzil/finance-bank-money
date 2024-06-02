@@ -1,3 +1,4 @@
+import CustomisableSection from '@/components/CustomisableSection'
 import DownloadSection from '@/components/DownloadSection'
 import FAQ from '@/components/FAQ'
 import Features from '@/components/Features'
@@ -15,6 +16,7 @@ const page = () => {
       <HeroSection></HeroSection>
       <Features></Features>
       <WhySection></WhySection>
+      <CustomisableSection></CustomisableSection>
       <Testimonial></Testimonial>
       <FAQ></FAQ>
       <DownloadSection></DownloadSection>

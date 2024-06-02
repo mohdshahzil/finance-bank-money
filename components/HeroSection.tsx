@@ -11,7 +11,7 @@ import Image from "next/image";
 const HeroSection = () => {
   const words = ["Optimal", "Smartest", "Wisest"];
   return (
-    <div className=" flex flex-col md:flex-row">
+    <div className=" flex flex-col md:flex-row p-2">
       <div className=" md:w-1/2">
         <div className="font-extrabold z-20">
           <h1 className="text-5xl md:text-6xl">
@@ -19,7 +19,7 @@ const HeroSection = () => {
           </h1>
           <h1 className="text-5xl md:text-6xl"> Financial Decisions</h1>
 
-          <p className="my-6 text-xl opacity-55">
+          <p className="my-6 text-xl opacity-55 text-justify">
             Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
           </p>
