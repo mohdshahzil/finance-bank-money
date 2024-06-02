@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 import FeaturesPhone from "@/public/assets/images/FeaturesPhone.png";
 import Image from "next/image";
 import StarSVG from "@/public/assets/SVG/StarSVG";
@@ -28,22 +30,46 @@ const featureList = [
 ];
 
 const Features = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+  useEffect(() => {
+    if (isInView) {
+      //fire animation
+      mainControls.start("visible");
+    }
+  }, [isInView]);
+
   return (
     <div className="flex flex-col-reverse md:flex-row p-2">
       <div className="md:w-1/2">
         <Image src={FeaturesPhone} alt="featuresphone" />
       </div>
       <div className="md:w-1/2 p-3">
-        <h1 className="text-[#FF5555] text-2xl font-semibold">FEATURES</h1>
+        <div className="text-[#FF5555] text-2xl font-semibold">FEATURES</div>
         <PrimaryHeading text="Uifry Premium" />
         <div className="mt-8">
           <div className="flex flex-col gap-6">
             {featureList.map((feature, index) => (
-              <div key={index}>
+              <div ref={ref} key={index}>
                 <h1 className="flex flex-row font-semibold gap-2 text-xl">
                   {feature.icon} {feature.title}
                 </h1>
-                <PrimaryParagraph text={feature.description}></PrimaryParagraph>
+
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 75 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  initial="hidden"
+                  animate={mainControls}
+                  transition={{ duration: 0.3, delay: 0.3 }}
+                  className=""
+                >
+                  <PrimaryParagraph
+                    text={feature.description}
+                  ></PrimaryParagraph>
+                </motion.div>
               </div>
             ))}
           </div>
@@ -54,3 +80,4 @@ const Features = () => {
 };
 
 export default Features;
+
