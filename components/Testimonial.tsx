@@ -34,7 +34,7 @@ const Testimonial = () => {
           </motion.div>
         </div>
         <div className="mt-2 mb-4">
-          <p className="text-5xl font-extrabold">What Out Users</p>
+          <p className="text-5xl font-extrabold">What Our Users</p>
           <p className="text-5xl font-extrabold">Say About Us?</p>
         </div>
       </div>
